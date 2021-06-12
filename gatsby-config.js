@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Das blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Jani Šumak`,
+      summary: `Full stack web developer`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://firstbulb.org`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `dasdachs`,
     },
   },
   plugins: [
@@ -47,6 +47,12 @@ module.exports = {
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
+      },
+    },
+    {
+      resolve: `gatsby-remark-prismjs`,
+      option: {
+        showLineNumbers: true,
       },
     },
     `gatsby-transformer-sharp`,
